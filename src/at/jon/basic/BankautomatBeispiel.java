@@ -51,3 +51,4 @@ public class BankautomatBeispiel {
         System.out.println("Beendet");
     }
 }
+//Fertig
