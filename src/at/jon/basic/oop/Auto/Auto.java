@@ -1,13 +1,11 @@
 package at.jon.basic.oop.Auto;
 
-import java.util.ArrayList;
-
 public class Auto {
     private int iLeistung = 0;
     private String sFarbe = "Keine Farbe";
 
     private Fahrrad kofferraumfahhrad;
-    private ArrayList<Getränkekiste> kofferraumGetraenke;
+    private Getränkekiste kofferraumGetraenke;
 
     public Auto() {
     }
@@ -29,12 +27,12 @@ public class Auto {
         return iLeistung;
     }
 
-    public ArrayList<Getränkekiste> getKofferraumGetraenke() {
+    public Getränkekiste getKofferraumGetraenke() {
         return kofferraumGetraenke;
     }
 
     public void setKofferraumGetraenke(Getränkekiste kofferraumGetraenke) {
-        this.kofferraumGetraenke.add(kofferraumGetraenke);
+        this.kofferraumGetraenke=kofferraumGetraenke;
     }
 
     public void setiLeistung(int iLeistung) {
