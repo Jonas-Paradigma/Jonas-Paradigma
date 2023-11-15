@@ -1,7 +1,6 @@
-package at.jon.basic.oop.ErstesObjekt;
+package at.jon.basic.oop.KonstrukturundKapselung;
 
 public class Car {
-
     public int fuelcosumption;
 
     public double fuelamount;
@@ -58,3 +57,4 @@ public class Car {
         System.out.println("Die Maximaldistanz betraegt: " + getRamainingRange + " km.");
     }
 }
+
