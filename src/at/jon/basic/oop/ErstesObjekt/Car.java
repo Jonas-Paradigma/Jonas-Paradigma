@@ -2,29 +2,27 @@ package at.jon.basic.oop.ErstesObjekt;
 
 public class Car {
 
-    public int fuelcosumption;
-
-    public double fuelamount;
-
-    public String brand;
-
-    public String serialnumber;
-
-    public String color;
-
-    public String turboboost;
-    public int maxfuelamount;
-
-    public String honk;
-    public int amountOfRepititions;
-
-    public double getRamainingRange;
-    public double fuelconsumptionperkilometer;
+    private Engine engine;
+    private int horsePower;
+    private int fuelcosumption;
+    private double fuelamount;
+    private String brand;
+    private String serialnumber;
+    private String color;
+    private String turboboost;
+    private int maxfuelamount;
+    private String honk;
+    private int amountOfRepititions;
+    private double getRamainingRange;
+    private double fuelconsumptionperkilometer;
 
 
-
-
-
+    public Car(int horsePower,Engine engine, String brand, String serialnumber){
+        this.horsePower = horsePower;
+        this.engine = engine;
+        this.brand = brand;
+        this.serialnumber = serialnumber;
+    }
 
 
 
@@ -57,4 +55,42 @@ public class Car {
         this.getRamainingRange = this.fuelamount / this.fuelconsumptionperkilometer;
         System.out.println("Die Maximaldistanz betraegt: " + getRamainingRange + " km.");
     }
+
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setFuelcosumption(int fuelcosumption) {
+        this.fuelcosumption = fuelcosumption;
+    }
+
+    public void setSerialnumber(String serialnumber) {
+        this.serialnumber = serialnumber;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public int getFuelcosumption() {
+        return fuelcosumption;
+    }
+
+    public String getSerialnumber() {
+        return serialnumber;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
 }
