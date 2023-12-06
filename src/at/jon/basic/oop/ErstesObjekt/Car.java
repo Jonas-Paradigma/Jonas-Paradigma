@@ -2,7 +2,10 @@ package at.jon.basic.oop.ErstesObjekt;
 
 public class Car {
 
-    private Engine engine;
+    public int speed;
+    public int speedzone;
+    private Tank tank;
+    public Engine engine;
     private int horsePower;
     private int fuelcosumption;
     private double fuelamount;
@@ -17,8 +20,7 @@ public class Car {
     private double fuelconsumptionperkilometer;
 
 
-    public Car(int horsePower,Engine engine, String brand, String serialnumber){
-        this.horsePower = horsePower;
+    public Car(Engine engine, String brand, String serialnumber){
         this.engine = engine;
         this.brand = brand;
         this.serialnumber = serialnumber;
@@ -31,6 +33,21 @@ public class Car {
         this.fuelamount = this.fuelamount - this.fuelcosumption;
         System.out.println("I am driving");
     }
+
+    public void speedzone(){
+        if(getEngine().getSpeed() > 75){
+            System.out.println("Vollgas");
+        } else if(getEngine().getSpeed() < 25){
+            System.out.println("Langsam");
+        }else {
+            System.out.println("Normal");
+        }
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
 
     public void bremsen() {
         System.out.println("Ich bremse");
@@ -92,5 +109,6 @@ public class Car {
     public Engine getEngine() {
         return engine;
     }
+
 
 }

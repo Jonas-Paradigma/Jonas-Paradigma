@@ -6,7 +6,11 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL, 20);
+        System.out.println(e1.getHorsePower()+" Hp " + e1.getType() + " " + e1.speed + " km/h");
+
+        Car c4 = new Car(e1, "Audi", "ABCD");
+        c4.speedzone();
         /*
         Car c1 = new Car();
         c1.setBrand("Audi");
