@@ -9,7 +9,7 @@ public class test {
         r1.Division(8, 2);
 
         Wissenschaftrechna w1 = new Wissenschaftrechna();
-        w1.;
+        w1.Sinus(70);
         w1.Cosinus(6);
 
 
